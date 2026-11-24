@@ -1,0 +1,41 @@
+name: vsit_complaint_box
+description: "VSIT Complaint Box — Student Grievance Redressal System for Vidyalankar School of Information Technology. Your Voice Matters. Your Campus Improves."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+  flutter: ">=3.35.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # State management
+  flutter_riverpod: ^3.0.0
+  # Navigation
+  go_router: ^17.0.0
+  # Evidence uploads (10.3.11 is retracted on pub.dev — do not upgrade)
+  file_picker: 10.3.10
+  # Local demo-mode storage (used only when Supabase is not configured)
+  shared_preferences: ^2.5.3
+  # PIN hashing (SHA-256) for anonymous tracking
+  crypto: ^3.0.7
+  # Dates
+  intl: ^0.20.2
+  # Analytics charts
+  fl_chart: ^1.1.1
+  # Report exports
+  pdf: ^3.11.3
+  csv: ^6.0.0
+  # Saving exported report files
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
